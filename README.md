@@ -1,15 +1,15 @@
 # VYBEBOARD
 
-&lt;div align="center"&gt;
-  &lt;h3&gt;Plan less. Ship more. Stay in the VYBE.&lt;/h3&gt;
-  &lt;p&gt;A full-stack, real-time collaborative project management platform built with the MERN stack + Socket.IO&lt;/p&gt;
+<div align="center">
+  <h3>Plan less. Ship more. Stay in the VYBE.</h3>
+  <p>A full-stack, real-time collaborative project management platform built with the MERN stack + Socket.IO</p>
 
-  ![Node.js](https://img.shields.io/badge/Node.js-18+-339933?style=flat-square&amp;logo=node.js&amp;logoColor=white)
-  ![React](https://img.shields.io/badge/React-18-61DAFB?style=flat-square&amp;logo=react&amp;logoColor=black)
-  ![MongoDB](https://img.shields.io/badge/MongoDB-6+-47A248?style=flat-square&amp;logo=mongodb&amp;logoColor=white)
-  ![Socket.IO](https://img.shields.io/badge/Socket.IO-4.7-010101?style=flat-square&amp;logo=socket.io)
-  ![Vite](https://img.shields.io/badge/Vite-5-646CFF?style=flat-square&amp;logo=vite&amp;logoColor=white)
-&lt;/div&gt;
+  ![Node.js](https://img.shields.io/badge/Node.js-18+-339933?style=flat-square&logo=node.js&logoColor=white)
+  ![React](https://img.shields.io/badge/React-18-61DAFB?style=flat-square&logo=react&logoColor=black)
+  ![MongoDB](https://img.shields.io/badge/MongoDB-6+-47A248?style=flat-square&logo=mongodb&logoColor=white)
+  ![Socket.IO](https://img.shields.io/badge/Socket.IO-4.7-010101?style=flat-square&logo=socket.io)
+  ![Vite](https://img.shields.io/badge/Vite-5-646CFF?style=flat-square&logo=vite&logoColor=white)
+</div>
 
 ---
 
@@ -30,7 +30,7 @@
 13. [Frontend Architecture](#frontend-architecture)
 14. [Real-Time Architecture](#real-time-architecture)
 15. [Design System](#design-system)
-16. [Production Build &amp; Deployment](#production-build--deployment)
+16. [Production Build & Deployment](#production-build--deployment)
 17. [Security](#security)
 18. [Known Limitations](#known-limitations)
 
@@ -49,7 +49,7 @@ VYBEBOARD is a production-grade, collaborative project management platform inspi
 | Technology | Version | Purpose |
 |---|---|---|
 | **Node.js** | 18+ | JavaScript runtime |
-| **Express.js** | 4.19 | HTTP server &amp; REST API |
+| **Express.js** | 4.19 | HTTP server & REST API |
 | **MongoDB** | 6+ | Primary database |
 | **Mongoose** | 8.4 | ODM / Schema modeling |
 | **Socket.IO** | 4.7 | Real-time bidirectional events |
@@ -67,26 +67,26 @@ VYBEBOARD is a production-grade, collaborative project management platform inspi
 | Technology | Version | Purpose |
 |---|---|---|
 | **React** | 18.3 | UI framework |
-| **Vite** | 5.2 | Build tool &amp; dev server |
+| **Vite** | 5.2 | Build tool & dev server |
 | **Tailwind CSS** | 3.4 | Utility-first CSS framework |
 | **React Router DOM** | 6.23 | Client-side routing |
-| **TanStack React Query** | 5.45 | Server state management &amp; caching |
+| **TanStack React Query** | 5.45 | Server state management & caching |
 | **Axios** | 1.7 | HTTP client with interceptors |
 | **Socket.IO Client** | 4.7 | Real-time WebSocket client |
-| **@dnd-kit** | 6.1 / 8.0 | Drag-and-drop for Kanban columns &amp; tasks |
-| **Framer Motion** | 11.2 | Animations &amp; transitions |
+| **@dnd-kit** | 6.1 / 8.0 | Drag-and-drop for Kanban columns & tasks |
+| **Framer Motion** | 11.2 | Animations & transitions |
 | **Recharts** | 2.12 | Analytics charts |
 | **Lucide React** | 0.383 | Icon library |
-| **react-helmet-async** | 2.0 | Dynamic `&lt;head&gt;` SEO metadata |
+| **react-helmet-async** | 2.0 | Dynamic `<head>` SEO metadata |
 
 ---
 
 ## Features
 
-### Authentication &amp; Authorization
+### Authentication & Authorization
 - JWT-based auth with `Authorization: Bearer` header and httpOnly cookie support
 - Secure signup / login / logout flow
-- Forgot password &amp; password reset via tokenized links (tokens stored hashed in DB)
+- Forgot password & password reset via tokenized links (tokens stored hashed in DB)
 - Change password from account settings
 - Role-based access control (RBAC): `owner`, `admin`, `member`, `viewer` — **enforced server-side on every route**
 
@@ -130,7 +130,7 @@ VYBEBOARD is a production-grade, collaborative project management platform inspi
 - Segmented filter tabs: **All / Today / Upcoming / Overdue / Completed** with live count badges
 - Mark as Complete / Reopen Task with inline loading feedback
 
-### Team &amp; Workspace Hub
+### Team & Workspace Hub
 - View all team members across the selected project
 - Horizontally scrollable project selector with auto-hiding custom scrollbar
 - Role selector inline for each member
@@ -180,9 +180,9 @@ VYBEBOARD is a production-grade, collaborative project management platform inspi
 - **Skeleton loaders:** Loading states for all data-heavy sections
 - **Toast notifications:** Non-blocking success / error alerts
 
-### SEO &amp; Public Site
+### SEO & Public Site
 - Full public marketing site: Landing, Features, Solutions (5 pages), About, Help/FAQ, Contact, Privacy, Terms
-- Per-page `&lt;SEO /&gt;` component with unique title, meta description, canonical URL, Open Graph, and Twitter card tags
+- Per-page `<SEO />` component with unique title, meta description, canonical URL, Open Graph, and Twitter card tags
 - JSON-LD structured data: `OrganizationSchema`, `SoftwareApplicationSchema`, `WebSiteSchema`, `FAQSchema`, `BreadcrumbSchema`
 - `sitemap.xml` and `robots.txt` in `client/public/`
 - All authenticated pages use `noindex`
@@ -193,7 +193,7 @@ VYBEBOARD is a production-grade, collaborative project management platform inspi
 
 | Action | Viewer | Member | Admin | Owner |
 |---|---|---|---|---|
-| View board &amp; tasks | Yes | Yes | Yes | Yes |
+| View board & tasks | Yes | Yes | Yes | Yes |
 | Comment on tasks | Yes | Yes | Yes | Yes |
 | Check checklist items | No | Yes | Yes | Yes |
 | Create tasks | No | No | Yes | Yes |
@@ -339,7 +339,7 @@ vybeboard/
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/&lt;your-username&gt;/vybeboard.git
+git clone https://github.com/<your-username>/vybeboard.git
 cd vybeboard
 
 # 2. Install server dependencies
@@ -437,7 +437,7 @@ All seed users share the password `vybeboard123`:
 
 ## API Reference
 
-All routes are prefixed with `/api`. Protected routes require `Authorization: Bearer &lt;token&gt;` header.
+All routes are prefixed with `/api`. Protected routes require `Authorization: Bearer <token>` header.
 
 ### Auth — `/api/auth`
 
@@ -499,13 +499,13 @@ All routes are prefixed with `/api`. Protected routes require `Authorization: Be
 
 | Method | Endpoint | Auth | Description |
 |---|---|---|---|
-| GET | /?q=&lt;query&gt; | Yes | Full-text search across tasks, projects, users |
+| GET | /?q=<query> | Yes | Full-text search across tasks, projects, users |
 
 ---
 
 ## WebSocket Events
 
-Every Socket.IO connection is authenticated with the same JWT used for REST. Clients join a `project:&lt;id&gt;` room only after server-side membership verification.
+Every Socket.IO connection is authenticated with the same JWT used for REST. Clients join a `project:<id>` room only after server-side membership verification.
 
 ### Client to Server
 
@@ -604,7 +604,7 @@ The global Analytics page (`/analytics`) and the project-level Analytics tab bot
 
 ---
 
-## Production Build &amp; Deployment
+## Production Build & Deployment
 
 ### Build
 
@@ -640,7 +640,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const clientDist = path.join(__dirname, '../client/dist');
 
 app.use(express.static(clientDist));
-app.get('*', (req, res, next) =&gt; {
+app.get('*', (req, res, next) => {
   if (req.path.startsWith('/api') || req.path.startsWith('/socket.io')) return next();
   res.sendFile(path.join(clientDist, 'index.html'));
 });
@@ -653,7 +653,7 @@ git init
 git add .
 git commit -m "feat: VYBEBOARD full-stack project management platform"
 git branch -M main
-git remote add origin https://github.com/&lt;your-username&gt;/&lt;repo-name&gt;.git
+git remote add origin https://github.com/dev-shahmir/codealpha_task_two
 git push -u origin main
 ```
 
@@ -693,4 +693,4 @@ git push -u origin main
 
 ## License
 
-MIT &copy; VYBEBOARD — Built for the Code Alpha Internship Program.
+MIT © VYBEBOARD — Built for the Code Alpha Internship Program.
