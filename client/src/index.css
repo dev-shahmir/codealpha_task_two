@@ -1,0 +1,138 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-canvas: #FAFAF7;
+  --color-surface: #FFFFFF;
+  --color-elevated: #FFFFFF;
+  --color-ink: #111827;
+  --color-ink-secondary: #64748B;
+  --color-brand: #6D5DFB;
+  --color-brand-secondary: #22D3EE;
+  --color-accent: #B8F34A;
+  --color-soft-violet: #E9E5FF;
+  --color-soft-cyan: #DDFBFF;
+  --color-success: #22C55E;
+  --color-warning: #F59E0B;
+  --color-danger: #F43F5E;
+  --color-border: #E5E7EB;
+}
+
+.dark {
+  --color-canvas: #0B1020;
+  --color-surface: #11182B;
+  --color-elevated: #17213A;
+  --color-ink: #F8FAFC;
+  --color-ink-secondary: #94A3B8;
+  --color-brand: #8B7CFF;
+  --color-brand-secondary: #38E8FF;
+  --color-accent: #C7FF5E;
+  --color-soft-violet: #232048;
+  --color-soft-cyan: #12283a;
+  --color-success: #4ADE80;
+  --color-warning: #FBBF24;
+  --color-danger: #FB7185;
+  --color-border: #26324D;
+}
+
+* { border-color: var(--color-border); }
+
+html,
+body,
+#root {
+  min-height: 100%;
+  transition: background-color 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+              color 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+body {
+  background-color: var(--color-canvas);
+  color: var(--color-ink);
+  overflow-x: hidden;
+}
+
+/* Smooth theme fade transition across layouts, cards, inputs, and borders */
+aside,
+nav,
+header,
+main,
+section,
+button,
+input,
+select,
+textarea,
+.bg-canvas,
+.bg-surface,
+.bg-elevated,
+.border-border-c,
+.text-ink,
+.text-ink-secondary {
+  transition: background-color 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+              border-color 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+              color 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+              box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+h1, h2, h3, h4 { font-family: 'Space Grotesk', sans-serif; }
+
+::selection { background-color: var(--color-soft-violet); }
+
+.neon-focus:focus-visible {
+  outline: 2px solid var(--color-brand);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+.orbit-ring {
+  border-radius: 9999px;
+  border: 1.5px dashed var(--color-border);
+}
+
+/* Sleek auto-hiding scrollbar without arrow buttons */
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+  transition: scrollbar-color 0.2s ease-in-out;
+}
+
+.custom-scrollbar:hover,
+.custom-scrollbar:active,
+.custom-scrollbar:focus-within {
+  scrollbar-color: var(--color-border) transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  height: 4px;
+  width: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-button {
+  display: none !important;
+  width: 0 !important;
+  height: 0 !important;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: transparent;
+  border-radius: 9999px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.custom-scrollbar:hover::-webkit-scrollbar-thumb,
+.custom-scrollbar:active::-webkit-scrollbar-thumb,
+.custom-scrollbar:focus-within::-webkit-scrollbar-thumb {
+  background-color: var(--color-border);
+}
+

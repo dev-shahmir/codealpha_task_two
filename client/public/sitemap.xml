@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://vybeboard.app/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://vybeboard.app/features</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://vybeboard.app/solutions/startups</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://vybeboard.app/solutions/developers</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://vybeboard.app/solutions/freelancers</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://vybeboard.app/solutions/agencies</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://vybeboard.app/solutions/remote-teams</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://vybeboard.app/about</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://vybeboard.app/contact</loc><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://vybeboard.app/help</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://vybeboard.app/privacy</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://vybeboard.app/terms</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+</urlset>

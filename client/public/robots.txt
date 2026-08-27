@@ -1,0 +1,23 @@
+User-agent: *
+Allow: /
+Allow: /features
+Allow: /solutions/
+Allow: /about
+Allow: /contact
+Allow: /help
+Allow: /privacy
+Allow: /terms
+
+Disallow: /dashboard
+Disallow: /projects
+Disallow: /tasks
+Disallow: /settings
+Disallow: /notifications
+Disallow: /team
+Disallow: /analytics
+Disallow: /login
+Disallow: /signup
+Disallow: /forgot-password
+Disallow: /reset-password
+
+Sitemap: https://vybeboard.app/sitemap.xml
