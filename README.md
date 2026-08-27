@@ -339,7 +339,7 @@ vybeboard/
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/<your-username>/vybeboard.git
+git clone https://github.com/dev-shahmir/codealpha_task_two
 cd vybeboard
 
 # 2. Install server dependencies
